@@ -40,12 +40,9 @@ function proverka(event) {
   event.preventDefault();
   if (canPlay) {
     if (input.value == correct) {
-      schet = schet + 1;
+      schet = schet + 1; 
+      primer(); 
     }
-    else{
-
-    }
-    primer();
     score.innerHTML = "Score: " + schet;
     input.value = "";
   }
